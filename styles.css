@@ -1,0 +1,73 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+body{
+    font-size: 20px;
+    font-weight: 500;
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8),
+    rgba(136, 136, 206, 0.7)), url(images/survey-form-background.jpeg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1,p,label {
+    text-align: center;
+    margin: 1.1rem auto;
+    color: var(--color-white);
+}
+
+form{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--color-darkblue-alpha);
+}
+
+fieldset{
+    border: none;
+    margin: 0.5em;
+}
+
+input, textarea {
+    display: flex;
+    width: 100%;
+    margin: 0.5rem auto;
+}
+
+input {
+    height: 2em;
+    border-radius: 8px;
+}
+
+/* label {
+    width: unset;
+    margin: 0 0.5em 0 0;
+} */
+
+#dropdown {
+    width: 100%;
+    height: 2em;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.inline {
+    display: inline-block;
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    height: 3rem;
+    margin: 1em auto;
+    max-width: 570px;
+}
